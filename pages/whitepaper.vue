@@ -11,7 +11,7 @@
       
       <div class="container-custom relative z-10">
         <div class="flex flex-col items-center text-center max-w-4xl mx-auto">
-          <h1 class="text-4xl lg:text-5xl font-bold mb-6" v-html="processHighlights($t('whitepaper.title'))"></h1>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6" v-html="processHighlights($t('whitepaper.title'))"></h1>
           <p class="text-xl mb-8 max-w-3xl" v-html="processHighlights($t('whitepaper.subtitle'))">
           </p>
           
