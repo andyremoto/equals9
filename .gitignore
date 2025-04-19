@@ -1,0 +1,32 @@
+# Nuxt.js
+node_modules
+.nuxt
+dist
+.output
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+# MacOS files
+.DS_Store
+
+# Specific missing files
+public/images/downloaded/home-of-gaming/image_13_62c6b0d89257c43853eb0796_Torneios-01-con-poster-00001.jpg
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

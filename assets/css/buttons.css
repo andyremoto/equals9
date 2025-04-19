@@ -1,0 +1,86 @@
+/* 
+  Equals9 2025 - Melhorias para Botões no Mobile 
+*/
+
+/* Estilos para todos os tamanhos de tela */
+.btn, 
+button:not(.no-style),
+a.btn,
+.button,
+.btn-primary,
+.btn-secondary,
+.btn-link {
+  transition: all 0.3s ease;
+}
+
+/* Melhorias especificamente para mobile */
+@media (max-width: 768px) {
+  /* Ajustar tamanho dos botões no mobile - versão mais balanceada */
+  .btn, 
+  button:not(.no-style),
+  a.btn,
+  .button,
+  .btn-primary,
+  .btn-secondary {
+    padding: 0.375rem 0.75rem !important;
+    font-size: 0.85rem !important;
+    min-height: auto !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-width: auto !important;
+    border-radius: 6px !important;
+    font-weight: 500 !important;
+    margin: 0.25rem 0.125rem !important;
+  }
+  
+  /* Botões pequenos (caso existam) */
+  .btn-sm,
+  .btn.btn-sm,
+  button.btn-sm {
+    padding: 0.35rem 0.75rem !important;
+    font-size: 0.8rem !important;
+    min-height: auto !important;
+  }
+  
+  /* Botões de links inline */
+  .btn-link {
+    font-size: 1rem !important;
+    padding: 0.25rem 0 !important;
+    border-bottom-width: 2px !important;
+  }
+  
+  /* Botões no header */
+  header .btn,
+  .header .btn,
+  nav .btn {
+    padding: 0.5rem 1.25rem !important;
+  }
+  
+  /* Melhorar botões dentro de cards */
+  .dapp-card .btn,
+  .dapp-card button,
+  .dapp-card a.btn {
+    padding: 0.45rem 0.85rem !important;
+    font-size: 0.85rem !important;
+    min-width: auto !important;
+    margin: 0.25rem 0 !important;
+    width: auto !important;
+  }
+  
+  /* Botões que são links sociais geralmente são menores */
+  .social-links .btn,
+  .social-icon-links .btn,
+  [class*="social"] .btn {
+    min-width: auto !important;
+    padding: 0.5rem !important;
+  }
+  
+  /* Evitar que botões fiquem muito grandes em telas muito pequenas */
+  @media (max-width: 380px) {
+    .btn, button:not(.no-style), a.btn, .button {
+      padding: 0.4rem 0.8rem !important;
+      font-size: 0.85rem !important;
+    }
+  }
+}

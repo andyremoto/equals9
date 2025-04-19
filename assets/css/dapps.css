@@ -1,0 +1,91 @@
+/* 
+  Equals9 2025 - Estilos para o componente DAppsShowcase
+  Ajustes para tornar os cards visíveis e organizá-los verticalmente no mobile
+*/
+
+/* Estilos gerais para desktop e mobile */
+.dapps-showcase {
+  padding: 2rem 0;
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: block !important;
+}
+
+/* Ajustes para os cards de DApps */
+.dapp-card {
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: block !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+
+.dapp-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajuste das imagens para preencher melhor os cards */
+.dapp-card .h-40 {
+  height: auto !important;
+  aspect-ratio: 16/9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.dapp-card img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Ajustes específicos para mobile */
+@media (max-width: 768px) {
+  .dapps-showcase {
+    padding: 1.5rem 0;
+  }
+  
+  /* Transformar o grid em coluna para mobile */
+  .dapps-showcase .grid.grid-cols-1 {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+    overflow: visible !important;
+  }
+  
+  /* Ajustar cada card para ocupar a largura total */
+  .dapp-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+  
+  /* Ajustar conteúdo dos cards */
+  .dapp-card h3 {
+    font-size: 1rem;
+    margin-top: 0.75rem;
+  }
+  
+  .dapp-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  /* Ajustes para os botões nos cards */
+  .dapp-card .btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+  }
+}
+
+/* Filtro para SVGs claros para aparecerem bem em fundos claros */
+.dark-svg {
+  filter: brightness(0.1) contrast(1.2);
+}

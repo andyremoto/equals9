@@ -1,0 +1,53 @@
+/* 
+  Equals9 2025 - Estilos específicos para a seção Hero no Mobile
+  Estes ajustes garantem que o texto e a imagem tenham o mesmo alinhamento vertical apenas no mobile
+*/
+
+/* Ajustes para mobile - com a imagem acima */
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+  
+  /* Transformar o grid em uma coluna para mobile */
+  .hero-section .grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  
+  /* Coluna da imagem - colocar acima do texto */
+  .hero-section .grid > div:last-child {
+    order: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-bottom: 0 !important;
+  }
+  
+  /* Coluna de texto - colocar abaixo da imagem */
+  .hero-section .grid > div:first-child,
+  .hero-section .hero-text-column {
+    order: 1 !important;
+    text-align: center !important;
+    height: auto !important;
+  }
+  
+  /* Centralização do texto */
+  .hero-section h1 {
+    text-align: center !important;
+    margin-top: 0 !important;
+  }
+  
+  .hero-section p {
+    text-align: center !important;
+  }
+  
+  /* Centralização dos botões */
+  .hero-section .flex.flex-row,
+  .hero-section .hero-buttons {
+    justify-content: center !important;
+    margin: 0 auto !important;
+  }
+}
