@@ -359,8 +359,8 @@
                   <!-- Team Member 2 -->
                   <div>
                     <h3 class="text-2xl font-bold text-white">ALEX ROMÁRIO CARVALHO PINHEIRO</h3>
-                    <p class="text-white mb-1">CLO – Chief Legal Officer</p>
-                    <a href="mailto:alexcarvalho@equals9.com" class="text-[#FF006E] hover:text-[#FF006E]/80 transition">alexcarvalho@equals9.com</a>
+                    <p class="text-white mb-1">VP – Vice President</p>
+                    <a href="mailto:alex@equals9.com" class="text-[#FF006E] hover:text-[#FF006E]/80 transition">alexcarvalho@equals9.com</a>
                   </div>
                   
                   <!-- Team Member 3 -->
