@@ -235,7 +235,7 @@
             
             <!-- The Winning Block Dapp -->
             <div id="winning-block" class="mb-16 scroll-mt-20">
-              <h2 class="text-3xl font-bold text-white mb-6" v-html="processHighlights($t('whitepaper.winning_block_title'))"></h2>
+              <h2 class="text-3xl font-bold text-white mb-6" v-html="processHighlights($t('whitepaper.section6'))"></h2>
               
               <div class="prose prose-lg prose-invert max-w-none">
                 <h3 class="text-2xl font-bold text-white mb-4" v-html="processHighlights($t('whitepaper.winning_block_subtitle'))"></h3>
@@ -515,7 +515,9 @@ const smoothScrollTo = (elementId) => {
 
 // Detecta qual seção está visível durante a rolagem
 const checkVisibleSections = () => {
-  const sections = document.querySelectorAll('[id^="introduction"], [id^="company"], [id^="utility-token"], [id^="legality"], [id^="equalssport"], [id^="authors-note"], [id^="team"]');
+  const sections = document.querySelectorAll(
+  '[id^="introduction"], [id^="company"], [id^="utility-token"], [id^="legality"], [id^="equalssport"], [id^="winning-block"], [id^="authors-note"], [id^="team"]'
+);
   
   // Mostra/oculta o botão "voltar ao topo"
   if (window.scrollY > 600) {
