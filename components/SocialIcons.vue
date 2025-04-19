@@ -60,7 +60,7 @@ const bgClass = computed(() => {
 // Social links with actual image paths
 const socialLinks = [
   {
-    name: 'Twitter',
+    name: 'X',
     url: 'https://twitter.com/tokeneq9',
     icon: $getImagePath('social', 'twitter')
   },

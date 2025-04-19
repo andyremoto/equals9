@@ -34,7 +34,7 @@ export default defineNuxtPlugin((nuxtApp) => {
       year2025: '/images/timeline/year2025.jpg',
     },
     social: {
-      twitter: '/images/icons/twitter.svg',
+      twitter: '/images/icons/x.svg', // Atualizado de twitter.svg para x.svg
       telegram: '/images/icons/telegram.svg',
       discord: '/images/icons/discord.svg',
       youtube: '/images/icons/youtube.svg',
